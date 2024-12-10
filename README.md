@@ -35,3 +35,8 @@ This project demonstrates how to use YOLOv11 for car detection in images and vid
    results = model.predict('path_of_your_file', imgsz=640, conf=0.3, save=True, show=True)
 ```
 
+## Results
+The output will include bounding boxes around detected cars in the images or frames of the video.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
