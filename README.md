@@ -30,8 +30,8 @@ This project demonstrates how to use YOLOv11 for car detection in images and vid
 ```
    from ultralytics import YOLO
 
-model = YOLO('Cardet_@_260ep.pt')
+   model = YOLO('Cardet_@_260ep.pt')
 
-results = model.predict('path_of_your_file', imgsz=640, conf=0.3, save=True, show=True)
+   results = model.predict('path_of_your_file', imgsz=640, conf=0.3, save=True, show=True)
 ```
 
