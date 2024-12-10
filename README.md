@@ -37,6 +37,7 @@ This project demonstrates how to use YOLOv11 for car detection in images and vid
 
 ## Results
 The output will include bounding boxes around detected cars in the images or frames of the video.
+**Make Sure to check out my model results.**
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
