@@ -14,14 +14,24 @@ This project demonstrates how to use YOLOv11 for car detection in images and vid
    ```bash
    git clone https://github.com/your-repository-url.git
    cd Car-Detection-using-YOLOv11
+   pip install tensorflow opencv-python ultralytics
 
-#Use the trained model by this inference format:
+##Inference
+1. Using the Trained Model
+  a. Real-time Webcam Inference:
 
-from ultralytics import YOLO
+   from ultralytics import YOLO
+
+   model = YOLO('Cardet_@_260ep.pt')
+
+   results = model.predict(source=0, show=True, conf=0.5, save=True)
+
+   b. File (Image/Video) Inference:
+
+   from ultralytics import YOLO
 
 model = YOLO('Cardet_@_260ep.pt')
 
+results = model.predict('path_of_your_file', imgsz=640, conf=0.3, save=True, show=True)
 
-results = model.predict(source=0, show=True, conf=0.5, save=True) #code for realtime webcam inference
 
-results = model.predict('path_of_your_file', imgsz=640, conf=0.3, save=True, show=True) #code for file like image or video inference
