@@ -16,7 +16,7 @@ This project demonstrates how to use YOLOv11 for car detection in images and vid
    cd Car-Detection-using-YOLOv11
    pip install tensorflow opencv-python ultralytics
 
-##Inference
+## Inference
 1. Using the Trained Model
   a. Real-time Webcam Inference:
 
